@@ -8,46 +8,48 @@ redirect_from: '/starter/installing.html'
 
 # Installing
 
-Assuming you've already installed [Node.js](https://nodejs.org/), create a directory to hold your application, and make that your working directory.
+با فرض اینکه شما از قبل [Node.js](https://nodejs.org/) را نصب کردید، یک دایرکتوری برای اپلیکیشن خود ایجاد کنید و آن را به عنوان دایرکتوری فعلی خود قرار دهید.
 
-- [Express 4.x](/{{ page.lang }}/4x/api.html) requires Node.js 0.10 or higher.
-- [Express 5.x](/{{ page.lang }}/5x/api.html) requires Node.js 18 or higher.
+- [Express 4.x](/{{ page.lang }}/4x/api.html) نیاز به Node.js ۰.۱۰ یا بالاتر دارد.
+- [Express 5.x](/{{ page.lang }}/5x/api.html) نیاز به Node.js ۱۸ یا بالاتر دارد.
 
 ```console
 $ mkdir myapp
 $ cd myapp
 ```
 
-Use the `npm init` command to create a `package.json` file for your application.
-For more information on how `package.json` works, see [Specifics of npm's package.json handling](https://docs.npmjs.com/files/package.json).
+از کامند `npm init` برای ایجاد کردن `package.json` برای اپلیکیشن خود استفاده کنید.
+برای اطلاعات بیشتر درباره اینکه چگونه `package.json` کار می‌کند، [جزئیات تنظیمات package.json در NPM](https://docs.npmjs.com/files/package.json).
 
 ```console
 $ npm init
 ```
 
-This command prompts you for a number of things, such as the name and version of your application.
-For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:
+این کامند به شما برای چیز‌هایی مانند اسم و ورژن اپلیکیشن شما پیام می‌دهد.
+فعلا شما می‌توانید با زدن دکمه RETURN بیش‌تر پیش‌فرض‌ها را قبول کنید، غیر از این‌ها:
 
 ```
 entry point: (index.js)
 ```
 
-Enter `app.js`, or whatever you want the name of the main file to be. If you want it to be `index.js`, hit RETURN to accept the suggested default file name.
+`app.js` یا هرچیزی که به عنوان اسم فایل اصلی شما باشد را وارد کنید. اگر می‌خواهید اسم فایل اصلی شما `index.js` باشد، RETURN را فشار دهید تا پیش‌فرض های پیشنهادی را قبول کنید
 
-Now, install Express in the `myapp` directory and save it in the dependencies list. For example:
+حالا اکسپرس را در دایرکتوری `myapp` نصب کنید و آن را در لیست dependency‌ها ذخیره کنید. برای مثال:
 
 ```console
 $ npm install express
 ```
 
-To install Express temporarily and not add it to the dependencies list:
+برای نصب کردن موقتی اکسپرس و اضافه نکردن آن به لیست dependency‌ها:
 
 ```console
 $ npm install express --no-save
 ```
 
 <div class="doc-box doc-info" markdown="1">
-By default with version npm 5.0+, `npm install` adds the module to the `dependencies` list in the `package.json` file; with earlier versions of npm, you must specify the `--save` option explicitly. Then, afterwards, running `npm install` in the app directory will automatically install modules in the dependencies list.
+
+به طور پیش‌فرض، با ورژن بالاتر از ۵.۰، `npm install` ماژول را در لیست ‌`dependency`های `package.json` اضافه می‌کند. با ورژن های قبلی NPM، شما باید گزینه `--save` را صریحا وارد کنید. بعد از آن، اجرا کردن `npm install` در دایرکتوری اپلیکیشن به طور خودکار ماژول‌ها را در لیست dependency نصب می‌کند.
+
 </div>
 
-### [Next: Hello World ](/{{ page.lang }}/starter/hello-world.html)
+### [بعدی: سلام جهان ](/{{ page.lang }}/starter/hello-world.html)
