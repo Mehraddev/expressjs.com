@@ -10,12 +10,12 @@ redirect_from: '/4x/api.html'
 
   <h1>4.x API</h1>
 
-{% include note.html content="Express 4.0 requires Node.js 0.10 or higher." %}
+{% include admonitions/note.html content="Express 4.0 requires Node.js 0.10 or higher." %}
 
-{% include api/{{ page.lang }}/4x/express.md %}
-{% include api/{{ page.lang }}/4x/app.md %}
-{% include api/{{ page.lang }}/4x/req.md %}
-{% include api/{{ page.lang }}/4x/res.md %}
-{% include api/{{ page.lang }}/4x/router.md %}
+{% include api/en/4x/express.md %}
+{% include api/en/4x/app.md %}
+{% include api/en/4x/req.md %}
+{% include api/en/4x/res.md %}
+{% include api/en/4x/router.md %}
 
 </div>

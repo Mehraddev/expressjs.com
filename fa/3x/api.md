@@ -17,10 +17,10 @@ Known and unknown security and performance issues in 3.x have not been addressed
 
   <h1>3.x API</h1>
 
-{% include api/{{ page.lang }}/3x/express.md %}
-{% include api/{{ page.lang }}/3x/app.md %}
-{% include api/{{ page.lang }}/3x/req.md %}
-{% include api/{{ page.lang }}/3x/res.md %}
-{% include api/{{ page.lang }}/3x/middleware.md %}
+{% include api/en/3x/express.md %}
+{% include api/en/3x/app.md %}
+{% include api/en/3x/req.md %}
+{% include api/en/3x/res.md %}
+{% include api/en/3x/middleware.md %}
 
 </div>
