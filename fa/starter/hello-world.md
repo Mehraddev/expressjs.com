@@ -9,7 +9,7 @@ redirect_from: '/starter/hello-world.html'
 # Hello world example
 
 <div class="doc-box doc-info" markdown="1">
-Embedded below is essentially the simplest Express app you can create. It is a single file app &mdash; _not_ what you'd get if you use the [Express generator](/{{ page.lang }}/starter/generator.html), which creates the scaffolding for a full app with numerous JavaScript files, Jade templates, and sub-directories for various purposes.
+کد زیر اساسا ساده‌ترین اپلیکیشن Express است که می‌توانید بسازید. این یک اپلیکیشن تک فایلی است &mdash; نه چیزی که از Express generator می‌گیرید که یک اپلیکیشن کامل با فایل‌های بی‌شمار جاوااسکریپت، Jade template ها، و ساب دایرکتوری‌ها با هدف های مختلف می‌سازد.
 </div>
 
 <script src="https://embed.runkit.com" data-element-id="hello-example" data-mode="endpoint" async defer></script>
@@ -27,33 +27,30 @@ console.log(`Example app listening on port ${port}`)
 })
 </code></pre></div>
 
-This app starts a server and listens on port 3000 for connections. The app responds with "Hello World!" for requests
-to the root URL (`/`) or _route_. For every other path, it will respond with a **404 Not Found**.
+ین اپلیکیشن با یک سرور استارت می‌شود و برای اتصالات به پورت ۳۰۰۰ گوش می‌دهد. این اپلیکیشن به ریکوئست‌های آدرس (`/`) یا روت با "Hello World!" پاسخ می‌دهد. برای بقیه ریکوئست‌ها با ارور **404 Not Found** پاسخ می‌دهد.
 
-The example above is actually a working server: Go ahead and click on the URL shown. You'll get a response, with real-time logs on the page, and any changes you make will be reflected in real time. This is powered by [RunKit](https://runkit.com), which provides an interactive JavaScript playground connected to a complete Node environment that runs in your web browser.
-Below are instructions for running the same app on your local machine.
+مثال بالا درواقع یک سرور در حال کار است: روی آدرس نشان داده شده کلیک کنید. یک پاسخ با لاگ‌های لحظه‌ای می‌گیرید، و هر تغییری که ایجاد می‌کنید در لحظه نمایش داده می‌شود. این قابلیت به وسیله [RunKit](https://runkit.com) ارائه شده است که یک playground جاوااسکریپت ارائه می‌دهد که به یک محیط کامل Node که روی مرورگر شما اجرا می‌شود، متصل شده است.
+پایین، راهنمایی است برای اجرا کردن همین اپلیکیشن روی کامپیوتر خودتان.
 
 <div class="doc-box doc-info" markdown="1">
-RunKit is a third-party service not affiliated with the Express project.
-</div>
+RunKit یک سرویس ثالث است که به پروژه Express ربطی ندارد.</div>
 
 ### Running Locally
 
-First create a directory named `myapp`, change to it and run `npm init`. Then, install `express` as a dependency, as per the [installation guide](/{{ page.lang }}/starter/installing.html).
+اول، یک دایرکتوری با نام `myapp` ایجاد کنید، وارد آن شوید و `npm init` را اجرا کنید. سپس، `express` را به عنوان dependency نصب کنید، همانطور که در [راهنمای نصب](/{{ page.lang }}/starter/installing.html) اشاره شده است.
 
-In the `myapp` directory, create a file named `app.js` and copy the code from the example above.
+در دایرکتوری `myapp` یک فایل با نام `app.js` ایجاد کنید و سپس کد مثال بالا را در آن کپی کنید.
 
 <div class="doc-box doc-notice" markdown="1">
-The `req` (request) and `res` (response) are the exact same objects that Node provides, so you can invoke
-`req.pipe()`, `req.on('data', callback)`, and anything else you would do without Express involved.
+`req` (درخواست) و `res` (پاسخ) دقیقاا همان آبجکت‌هایی هستند که Node ارائه می‌دهد، پس شما می‌توانید `req.pipe()`, `req.on('data', callback)` و هرچیز دیگر که بدون Express انجام می‌داید را فراخوانی کنید.
 </div>
 
-Run the app with the following command:
+اپلیکیشن را با دستور زیر اجرا کنید:
 
 ```console
 $ node app.js
 ```
 
-Then, load `http://localhost:3000/` in a browser to see the output.
+سپس `http://localhost:3000/` را در مرورگر باز کنید تا نتایج را ببینید.
 
-### [Previous: Installing ](/{{ page.lang }}/starter/installing.html)&nbsp;&nbsp;&nbsp;&nbsp;[Next: Express Generator ](/{{ page.lang }}/starter/generator.html)
+### [قبلی: نصب کردن ](/{{ page.lang }}/starter/installing.html)&nbsp;&nbsp;&nbsp;&nbsp;[بعدی: Express generator ](/{{ page.lang }}/starter/generator.html)
