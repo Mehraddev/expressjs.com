@@ -6,24 +6,24 @@ lang: fa
 redirect_from: '/starter/generator.html'
 ---
 
-# Express application generator
+# [جنریتور اپلیکیشن Express]
 
-Use the application generator tool, `express-generator`, to quickly create an application skeleton.
+از جنریتور اپلیکیشن اکسپرس، `express-generator`، برای ساختن سریع اسکلت یک اپلیکیشن استفاده کنید.
 
-You can run the application generator with the `npx` command (available in Node.js 8.2.0).
+شما می‌توانید با دستور `npx`، جنریتور اپلیشکیشن را اجرا کنید (در دسترس در ورژن ۸.۲.۰ Node.js)
 
 ```console
 $ npx express-generator
 ```
 
-For earlier Node versions, install the application generator as a global npm package and then launch it:
+برای ورژن های قبلی Node، جنریتور اپلیکیشن را به عنوان پکیج گلوبال `npm` نصب کنید.
 
 ```console
 $ npm install -g express-generator
 $ express
 ```
 
-Display the command options with the `-h` option:
+با گزینه `-h`، گزینه‌های(آپشن‌های) دستور را نمایش دهید:
 
 ```console
 $ express -h
@@ -45,7 +45,7 @@ $ express -h
     -f, --force         force on non-empty directory
 ```
 
-For example, the following creates an Express app named _myapp_. The app will be created in a folder named _myapp_ in the current working directory and the view engine will be set to <a href="https://pugjs.org/" target="_blank" title="Pug documentation">Pug</a>:
+برای مثال، کد پایین یک اپلیکیشن اکسپرس با نام _myapp_ می‌سازد. این اپلیشکین در فولدری با نام _myapp_ در دایرکتوری فعلی ساخته خواهد شد و <a href="https://pugjs.org/" target="_blank" title="Pug documentation">Pug</a>، view engine خواهد بود.
 
 ```console
 $ express --view=pug myapp
@@ -69,34 +69,34 @@ $ express --view=pug myapp
    create : myapp/bin/www
 ```
 
-Then install dependencies:
+سپس dependency ها را نصب کنید:
 
 ```console
 $ cd myapp
 $ npm install
 ```
 
-On MacOS or Linux, run the app with this command:
+در MacOS یا Linux اپلیکیشن را با این دستور اجرا کنید:
 
 ```console
 $ DEBUG=myapp:* npm start
 ```
 
-On Windows Command Prompt, use this command:
+در کامند پرامت ویندوز، از این کامند استفاده کنید:
 
 ```console
 > set DEBUG=myapp:* & npm start
 ```
 
-On Windows PowerShell, use this command:
+در PowerShell ویندوز، از این دستور استفاده کنید:
 
 ```console
 PS> $env:DEBUG='myapp:*'; npm start
 ```
 
-Then, load `http://localhost:3000/` in your browser to access the app.
+سپس `http://localhost:3000/` را در مرورگرتان باز کنید تا به اپلیکیشن دسترسی پیدا کنید:
 
-The generated app has the following directory structure:
+اپلیکیشن ایجاد شده ساختار دایرکتوری‌ای به این شکل خواهد داشت:
 
 ```console
 .
@@ -121,7 +121,7 @@ The generated app has the following directory structure:
 ```
 
 <div class="doc-box doc-info" markdown="1">
-The app structure created by the generator is just one of many ways to structure Express apps. Feel free to use this structure or modify it to best suit your needs.
+ساختار اپلیکیشن ایجاد شده توسط جنریتور، یک نمونه از نمونه‌های زیادی است که برای ساختار دادن به پروژه‌ها استفاده میشود. در صورت تمایل می‌توانید این ساختار را تغییر دهید تا به بهترین حالت ممکن نیاز‌های پروژه‌تان را رفع کنید.
 </div>
 
-### [Previous: Hello World ](/{{ page.lang }}/starter/hello-world.html)&nbsp;&nbsp;&nbsp;&nbsp;[Next: Basic routing](/{{ page.lang }}/starter/basic-routing.html)
+### [قبلی: سلام جهان ](/{{ page.lang }}/starter/hello-world.html)&nbsp;&nbsp;&nbsp;&nbsp;[بعدی: مسیریابی ساده](/{{ page.lang }}/starter/basic-routing.html)
